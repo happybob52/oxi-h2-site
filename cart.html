@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart – Oxi H₂ Electrolyte Gummies</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Oxi</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Learn</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart <span class="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="container">
+    <h1 style="margin-bottom:1rem;color:var(--primary-color);">Your Cart</h1>
+    <div class="cart-container">
+      <div id="cart-items"></div>
+      <div class="cart-summary" id="cart-summary"></div>
+      <div style="margin-top:1.5rem;">
+        <a href="shop.html" class="btn" style="margin-right:1rem;">Continue Shopping</a>
+        <a href="checkout.html" class="btn">Checkout</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    © 2025 Oxi. All rights reserved.
+  </footer>
+  <script src="js/cart.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      renderCart();
+    });
+  </script>
+</body>
+</html>
